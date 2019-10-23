@@ -7,9 +7,9 @@ public class Main {
         int a=scn.nextInt();
         for(int i=1;i<=a;i++){
             for(int j=1;j<=a;j++){
-                System.out.printf("%d  ",i*j);
+                System.out.printf("%d\t",i*j);
             }
-            System.out.printf("\n");
+            System.out.println(" ");
         }
     }
 }

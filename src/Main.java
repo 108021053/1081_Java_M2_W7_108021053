@@ -1,14 +1,22 @@
 import java.util.Scanner;
 
 public class Main {
-
     public static void main(String[] args) {
       Scanner scn=new Scanner(System.in);
         int a=scn.nextInt();
-        int sum=0;
-        for(int i=3;i<=a;i+=3){
-           sum=sum+i;
+        int b=a/2;
+        boolean flag=true;
+        for(int i=2;i<=b;i++){
+           if (a%i==0){
+               flag=false;
+               break;
+           }
         }
-        System.out.println(sum);
+        if(flag){
+            System.out.println("yes");
+        }
+        else {
+            System.out.println("no");
     }
+}
 }

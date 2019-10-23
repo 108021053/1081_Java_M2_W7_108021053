@@ -1,14 +1,15 @@
 import java.util.Scanner;
 
 public class Main {
+
     public static void main(String[] args) {
-      Scanner scn=new Scanner(System.in);
+        Scanner scn=new Scanner(System.in);
         int a=scn.nextInt();
-        int sum=0;
         for(int i=1;i<=a;i++){
-           sum=sum+i*(i+1);
+            for(int j=1;j<=a;j++){
+                System.out.printf("%d  ",i*j);
+            }
+            System.out.printf("\n");
         }
-        System.out.println(sum);
     }
 }
-

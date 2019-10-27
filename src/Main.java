@@ -4,13 +4,12 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scn=new Scanner(System.in);
-        int a=scn.nextInt();
-        String str=scn.nextLine();
-        for(int i=1;i<=a;i++){
-            for(int j=1;j<=a;j++){
-                System.out.print(str);
+        double a=scn.nextInt();
+        double x=0;
+        for(double i=1;i<=a;i++){
+            x=x+Math.pow(2,i);
            }
-            System.out.println(" ");
+        System.out.println(x);
         }
     }
-}
+

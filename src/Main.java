@@ -3,21 +3,24 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        Scanner scn = new Scanner(System.in);
-        int n = scn.nextInt();
-        int a = 0, b = 0, c = 0;
-        while (n != -999) {
-            if (n > 0) {
-                a++;
-            } else if (n == 0) {
-                b++;
-            } else {
-                c++;
+        Scanner scn=new Scanner(System.in);
+        int n=scn.nextInt();
+        int sum=0;
+        for(int i=2;i<=n;i++){
+            int j=i;
+            while(j%2==0){
+                j/=2;
             }
-            n = scn.nextInt();
+            while (j%3==0){
+                j/=3;
+            }
+            while (j%5==0){
+                j/=5;
+            }
+            if(j==1){
+                sum=sum+i;
+            }
         }
-        System.out.println(a);
-        System.out.println(b);
-        System.out.println(c);
+        System.out.println(sum);
     }
 }

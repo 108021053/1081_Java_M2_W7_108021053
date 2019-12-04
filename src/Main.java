@@ -3,14 +3,12 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        Scanner scn = new Scanner(System.in);
-        int n=scn.nextInt();
-        int k=n;
-        while (n>=3){
-            k+=n/3;
-            n=n/3+n%3;
-            }
-        System.out.println(k);
+        Scanner scn=new Scanner(System.in);
+        char data[]=scn.nextLine().toCharArray();
+        for (int i=data.length-1;i>=0;i--){
+            System.out.print(data[i]);
         }
-    }
+        System.out.println();
 
+    }
+}

@@ -4,26 +4,13 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scn=new Scanner(System.in);
-        Random rand=new Random();
-        int n=scn.nextInt();
-        rand.setSeed(n);
-        int i=0;
-        int data[]=new int[6];
-        while (i<6){
-            boolean flag=true;
-            data[i]=rand.nextInt(42)+1;
-            for (int j=0;j<i;j++){
-                if (data[i]==data[j]){
-                    flag=false;
-                    break;
-                }
-            }
-            if (flag){
-                System.out.print(data[i]+"\t");
-                i++;
-            }
+        int v1=0;
+        String str=scn.nextLine();
+        String strArr[]=str.split(" ");
+        for (int i=0;i<strArr.length;i++){
+            v1=Integer.parseInt(strArr[i]);
+            System.out.print(v1*v1+"\t");
         }
         System.out.println();
-
     }
 }

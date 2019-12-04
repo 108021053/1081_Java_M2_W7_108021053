@@ -5,7 +5,8 @@ public class Main {
     public static void main(String[] args) {
         Scanner scn=new Scanner(System.in);
         Random rand=new Random();
-        rand.setSeed(23323456);
+        int n=scn.nextInt();
+        rand.setSeed(n);
         int i=0;
         int data[]=new int[6];
         while (i<6){
